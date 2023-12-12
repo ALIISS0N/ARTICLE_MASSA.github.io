@@ -1,0 +1,394 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--poppins);
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-15);
+}
+:root {
+  --poppins: "Poppins", sans-serif;
+  --color-1: #ffffff;
+  --color-2: #f8f9fc;
+  --color-3: #d51c17;
+  --color-4: #000000;
+  --color-5: #2f2f2f;
+  --color-6: #e5e5e5;
+  --color-7: #1f831c;
+  --color-8: #9f9f9f;
+  --color-9: #7c7c7c;
+  --color-10: #f5f8f7;
+  --color-11: #00000080;
+  --color-12: #6c6c6c;
+  --color-13: #0000000d;
+  --color-14: #141414;
+  --color-15: #ebebeb;
+  --color-16: #a0a0a0;
+  --color-17: #c2c2c2;
+}
+/* GERAL */
+h1 {
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 4.8em;
+  letter-spacing: 0;
+  line-height: 52px;
+  color: var(--color-5);
+  margin-bottom: 8px;
+}
+h2 {
+  font-family: var(--poppins);
+  font-weight: 800;
+  font-size: 3em;
+  letter-spacing: 0;
+  line-height: 30px;
+  color: var(--color-3);
+}
+h3 {
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  line-height: 20px;
+  color: var(--color-14);
+  margin-bottom: 6px;
+}
+p {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 1.6em;
+  letter-spacing: 0;
+  line-height: 30px;
+  color: var(--color-5);
+  margin-bottom: 40px;
+}
+a {
+  text-decoration: none;
+  color: var(--color-5);
+}
+li {
+  list-style: none;
+}
+/* CONATINER PAGE */
+.containerPage {
+  max-width: 1300px;
+  height: 100%;
+  background-color: var(--color-2);
+}
+/* header */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 50px 18px 50px;
+  max-width: 1200px;
+  height: 116px;
+}
+.headerContainer1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerLogo {
+}
+.previsaoContainer {
+  display: flex;
+  width: 130.54px;
+  height: 37px;
+  align-items: center;
+  justify-content: space-between;
+}
+.previsao .temp {
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 0;
+  color: var(--color-5);
+}
+.previsao .cityTemp {
+  font-family: var(--poppins);
+  font-weight: 500;
+  font-size: 1.2em;
+  letter-spacing: 0;
+  color: var(--color-9);
+}
+.linksAssineClassificados {
+  width: 157px;
+  height: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+.linkHeaderAssClas {
+  font-family: var(--poppins);
+  font-weight: 800;
+  font-size: 1.2em;
+  letter-spacing: 0;
+  line-height: 18px;
+  color: var(--color-3);
+}
+.inputBusca {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.inputBusca .buscar {
+  display: flex;
+  max-width: 321px;
+  height: 45px;
+  border-radius: 15px;
+  border: 1px solid var(--color-6);
+  padding: 14px 0px 14px 28px;
+}
+.inputBusca .searchSvg {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.faceInst {
+  display: flex;
+  width: 92px;
+  justify-content: space-between;
+}
+.facebook,
+.instagram {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-3);
+  border-radius: 50%;
+}
+.headerContainer2 {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  height: 46px;
+  border: 1px var(--color-6);
+  border-style: solid hidden solid hidden;
+}
+.headerContainer2 .navHeader {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerContainer2 .navHeader > ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerContainer2 .navHeader > ul > a {
+  min-width: 93px;
+  height: 31px;
+  margin-top: 15px;
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: 0;
+  line-height: 17px;
+  color: var(--color-5);
+}
+.headerContainer2 .navHeader > ul > a > li {
+  max-width: 109px;
+  height: 31px;
+}
+.headerContainer2 .navHeader > ul > a:hover {
+  border-bottom: 2px solid var(--color-7);
+}
+/* MAIN */
+.main {
+  position: relative;
+  width: 100%;
+}
+.sec1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.art1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.art1 .maisSobre {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 2em;
+  letter-spacing: 0;
+  line-height: 30px;
+  color: var(--color-9);
+  margin-bottom: 40px;
+}
+.art1 {
+}
+.imgFelipePezzoni {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.paginaTag {
+  width: 1000px;
+  height: 141px;
+  margin-top: -70px;
+  background-color: var(--color-10);
+  position: relative;
+}
+.citacao {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  height: 325px;
+  padding: 0px 50px;
+  margin-bottom: 40px;
+}
+.citacaoTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 425px;
+  height: 325px;
+}
+.citacaoText {
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 2.4em;
+  letter-spacing: 0;
+  line-height: 30px;
+  color: var(--color-5);
+  text-align: center;
+  margin: 22px 0 0 0;
+}
+.citacaoByPezzoni {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 1.4em;
+  letter-spacing: 0;
+  line-height: 30px;
+  color: var(--color-5);
+}
+.imgContainer {
+  width: 425px;
+  height: 325px;
+}
+.imgContainer > p {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 0;
+  line-height: 20px;
+  color: var(--color-5);
+}
+
+/* SEC 2 */
+.sec2 {
+  margin-bottom: 60px;
+  margin: 50px;
+}
+.sec2 > h2 {
+  margin-bottom: 20px;
+}
+.leiaTambemArtigos {
+  display: flex;
+  justify-content: space-between;
+}
+.artigo {
+  width: 224px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 20px 18px 20px;
+  border: 1px solid var(--color-6);
+}
+.btnMusica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 63px;
+  height: 23px;
+  color: var(--color-1);
+  background-color: var(--color-3);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 57px;
+  padding: 4px 11px;
+}
+.time {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 1px;
+  line-height: 16px;
+  color: var(--color-8);
+}
+
+/* FOOTER */
+.footer {
+  width: 1300px;
+}
+.logoFooter {
+  display: flex;
+}
+.footerMenus {
+  display: flex;
+}
+.copy > p {
+  font-size: 1em;
+}
