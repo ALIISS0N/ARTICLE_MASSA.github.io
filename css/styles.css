@@ -51,7 +51,7 @@ body {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background-color: var(--color-15);
+  background-color: var(--color-17);
 }
 :root {
   --poppins: "Poppins", sans-serif;
@@ -136,8 +136,6 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-.headerLogo {
-}
 .previsaoContainer {
   display: flex;
   width: 130.54px;
@@ -196,15 +194,15 @@ li {
 }
 .faceInst {
   display: flex;
-  width: 92px;
-  justify-content: space-between;
+}
+.facebook {
+  margin-right: 12px;
 }
 .facebook,
 .instagram {
   width: 40px;
   height: 40px;
   display: flex;
-  margin: 0 auto;
   justify-content: center;
   align-items: center;
   border: none;
@@ -263,9 +261,11 @@ li {
 }
 .art1 {
   display: flex;
+  width: 1000px;
+  margin-top: -70px;
+  background-color: var(--color-10);
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 30px 50px 0px 50px;
 }
 .art1 .maisSobre {
   font-family: var(--poppins);
@@ -276,25 +276,35 @@ li {
   color: var(--color-9);
   margin-bottom: 40px;
 }
-.art1 {
-}
-.imgFelipePezzoni {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .paginaTag {
-  width: 1000px;
-  height: 141px;
-  margin-top: -70px;
-  background-color: var(--color-10);
-  position: relative;
+  margin-bottom: 16px;
+}
+.tags {
+  margin: 0px 0px 30px 0px;
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.tagStyle {
+  color: var(--color-3);
+}
+.musicaInfTime {
+  margin: 0px;
+  font-family: var(--poppins);
+  font-weight: 500;
+  font-size: 1.2em;
+  letter-spacing: 0;
+  line-height: 30px;
+  color: var(--color-9);
+  text-transform: uppercase;
 }
 .citacao {
   display: flex;
   justify-content: space-between;
-  width: 1000px;
   height: 325px;
-  padding: 0px 50px;
   margin-bottom: 40px;
 }
 .citacaoTextContainer {
@@ -304,6 +314,7 @@ li {
   justify-content: center;
   width: 425px;
   height: 325px;
+  margin-right: 50px;
 }
 .citacaoText {
   font-family: var(--poppins);
@@ -313,6 +324,7 @@ li {
   line-height: 30px;
   color: var(--color-5);
   text-align: center;
+  margin: 0;
   margin: 22px 0 0 0;
 }
 .citacaoByPezzoni {
@@ -327,15 +339,206 @@ li {
   width: 425px;
   height: 325px;
 }
-.imgContainer > p {
+.videoIntroDvdEva {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.repertorioSpotify {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.repertorioSpotify .citacaoText {
+  margin-bottom: 15px;
+}
+.entrevista,
+.downloadCapaAlbum {
+  margin-bottom: 40px;
+}
+.entreDown {
+  display: flex;
+  align-items: center;
+}
+.playDown {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-3);
+  cursor: pointer;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.entreDownText {
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+  color: var(--color-3);
+  margin: 0px 0px 3px 0px;
+}
+.entreDowData {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 0;
+  line-height: 18px;
+  color: var(--color-8);
+}
+
+.difilcudades {
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 3.6em;
+  letter-spacing: 0;
+  line-height: 30px;
+  color: var(--color-5);
+  margin-bottom: 15px;
+}
+.citacao2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 2.4em;
+  letter-spacing: 0;
+  line-height: 30px;
+  color: var(--color-3);
+  margin-bottom: 40px;
+}
+.imgContainer .producao {
   font-family: var(--poppins);
   font-weight: 400;
   font-size: 1.2em;
   letter-spacing: 0;
   line-height: 20px;
-  color: var(--color-5);
+  color: var(--color-9);
 }
-
+.galeriaNancimentoFilho {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  height: 555px;
+}
+.galeriaContainer {
+  width: 900px;
+  height: 500px;
+  background: var(--color-6);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.producao {
+  margin: 8px 0px 20px 0px;
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 0;
+  line-height: 20px;
+  color: var(--color-9);
+}
+.proxFoto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+  height: 10px;
+}
+.linkProx {
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--color-5);
+  border-radius: 50%;
+}
+.linkProx:hover {
+  background-color: var(--color-5);
+}
+/* SEC ASIDE */
+.ouvir {
+  position: absolute;
+  left: 83px;
+  top: 432px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.ouvirMusica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 34px;
+  height: 51px;
+  margin-bottom: 33px;
+}
+.btnOuvir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-3);
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.svgOuvir {
+  fill: var(--color-1);
+}
+.textOuvir {
+  margin: 0px;
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 1em;
+  letter-spacing: 0;
+  line-height: 16px;
+  color: var(--color-3);
+}
+.mediaSocial {
+  display: flex;
+  width: 18px;
+  height: 121px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+/* PRINT */
+.print {
+  position: absolute;
+  right: 85px;
+  top: 432px;
+}
+.printPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 51px;
+}
+.btnPrint {
+  border: none;
+  cursor: pointer;
+}
+.textPrint {
+  margin: 0px;
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 1em;
+  letter-spacing: 0;
+  line-height: 16px;
+  color: var(--color-3);
+}
 /* SEC 2 */
 .sec2 {
   margin-bottom: 60px;
@@ -378,17 +581,67 @@ li {
   line-height: 16px;
   color: var(--color-8);
 }
-
 /* FOOTER */
 .footer {
+  position: relative;
   width: 1300px;
+  height: 560px;
+  padding: 60px 50px 0px 50px;
+  background-color: var(--color-15);
 }
 .logoFooter {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 .footerMenus {
   display: flex;
+  justify-content: space-between;
 }
-.copy > p {
+.menu > h3 {
+  font-family: var(--poppins);
+  font-weight: 900;
+  font-size: 1.2em;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  color: var(--color-5);
+  text-transform: uppercase;
+}
+.menu .navFooter .navList .navLinkFooter > a {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: -0.5px;
+  line-height: 26px;
+  color: var(--color-5);
+  padding: 2px;
+}
+.menu .navFooter .navList .navLinkFooter > a:hover {
+  border-bottom: 1px solid var(--color-5);
+  padding: 2px;
+}
+.menuEmpregos {
+  margin-bottom: 50px;
+}
+.copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  height: 65px;
+  border-top: 1px solid var(--color-17);
+  position: absolute;
+  bottom: 0;
+}
+.svgLogoMW {
+  display: flex;
+}
+.copy .copyText {
+  font-family: var(--poppins);
+  font-weight: 500;
   font-size: 1em;
+  letter-spacing: 0;
+  line-height: 24px;
+  color: var(--color-16);
+  margin: 0;
 }
