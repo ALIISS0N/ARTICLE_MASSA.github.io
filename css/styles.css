@@ -143,19 +143,21 @@ li {
   align-items: center;
   justify-content: space-between;
 }
-.previsao .temp {
+.previsaoContainer .previsao .temp {
   font-family: var(--poppins);
   font-weight: 700;
   font-size: 1.4em;
   letter-spacing: 0;
   color: var(--color-5);
 }
-.previsao .cityTemp {
+.previsaoContainer .previsao .cityTemp {
   font-family: var(--poppins);
   font-weight: 500;
   font-size: 1.2em;
   letter-spacing: 0;
+  line-height: 14px;
   color: var(--color-9);
+  margin: 0;
 }
 .linksAssineClassificados {
   width: 157px;
@@ -178,7 +180,7 @@ li {
 }
 .inputBusca .buscar {
   display: flex;
-  max-width: 321px;
+  width: 321px;
   height: 45px;
   border-radius: 15px;
   border: 1px solid var(--color-6);
@@ -230,10 +232,12 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-.headerContainer2 .navHeader > ul > a {
+.headerContainer2 .navHeader > ul > li {
   min-width: 93px;
   height: 31px;
   margin-top: 15px;
+}
+.headerContainer2 .navHeader > ul > li > a {
   font-family: var(--poppins);
   font-weight: 600;
   font-size: 1.1em;
@@ -241,11 +245,11 @@ li {
   line-height: 17px;
   color: var(--color-5);
 }
-.headerContainer2 .navHeader > ul > a > li {
+.headerContainer2 .navHeader > ul > li {
   max-width: 109px;
   height: 31px;
 }
-.headerContainer2 .navHeader > ul > a:hover {
+.headerContainer2 .navHeader > ul > li:hover {
   border-bottom: 2px solid var(--color-7);
 }
 /* MAIN */
