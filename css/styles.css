@@ -678,10 +678,14 @@ iframe {
     line-height: 22px;
     margin-bottom: 30px;
   }
+  p > br {
+    display: none;
+  }
   /* CONATINER PAGE */
   .containerPage {
     width: 360px;
   }
+  /* ASIDE */
   /* HEADER */
   .header {
     max-width: 1200px;
@@ -799,7 +803,7 @@ iframe {
     line-height: 24px;
     margin: 16px 0px 0px 0px;
   }
-  .citacaoByPezzoni{
+  .citacaoByPezzoni {
     margin: 0;
   }
   .imgContainer {
@@ -810,6 +814,70 @@ iframe {
   .citacaoImgFelipePezzoni {
     width: 320px;
     height: 226px;
+  }
+  .videoIntroDvdEva > iframe {
+    display: flex;
+    width: 320px;
+    height: 180px;
+  }
+  .repertorioSpotify > iframe {
+    display: flex;
+    width: 320px;
+  }
+  .repertorioSpotify .citacaoText {
+    font-size: 1.6em;
+    letter-spacing: 0px;
+    line-height: 24px;
+  }
+  .citacao2 {
+    font-size: 2em;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .citacao2 > br {
+    display: none;
+  }
+  .difilcudades {
+    font-size: 2em;
+    letter-spacing: 0;
+    line-height: 27px;
+    margin-bottom: 15px;
+  }
+  .galeriaNancimentoFilho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 370px;
+  }
+  .galeriaContainer {
+    width: 320px;
+    height: 320px;
+  }
+  .galeriaFotosFilho {
+    width: 320px;
+    height: 166px;
+  }
+  .producao {
+    margin: 8px 0px 20px 0px;
+    font-size: 1em;
+    line-height: 15px;
+  }
+  .proxFoto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    height: 8px;
+  }
+  .linkProx {
+    width: 8px;
+    height: 8px;
+  }
+  .proxPlus {
+    display: none;
   }
 
   /* SECT2 */
