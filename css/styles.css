@@ -115,6 +115,9 @@ a {
 li {
   list-style: none;
 }
+iframe {
+  border: none;
+}
 /* CONATINER PAGE */
 .containerPage {
   max-width: 1300px;
@@ -578,6 +581,11 @@ li {
   justify-content: center;
   width: 63px;
   height: 23px;
+  font-weight: 700;
+  font-size: 1em;
+  letter-spacing: 0.2px;
+  line-height: 16px;
+  text-transform: uppercase;
   color: var(--color-1);
   background-color: var(--color-3);
   border: none;
