@@ -138,6 +138,9 @@ iframe {
   justify-content: space-between;
   align-items: center;
 }
+.menuLateral {
+  display: none;
+}
 .previsaoContainer {
   display: flex;
   width: 130.54px;
@@ -259,6 +262,9 @@ iframe {
   position: relative;
   width: 100%;
 }
+.imgFelipePezzoneMobile {
+  display: none;
+}
 .sec1 {
   display: flex;
   flex-direction: column;
@@ -272,15 +278,6 @@ iframe {
   background-color: var(--color-2);
   flex-direction: column;
   padding: 50px 50px 0px 50px;
-}
-.art1 .maisSobre {
-  font-family: var(--poppins);
-  font-weight: 400;
-  font-size: 2em;
-  letter-spacing: 0;
-  line-height: 30px;
-  color: var(--color-9);
-  margin-bottom: 40px;
 }
 .paginaTag {
   width: 1000px;
@@ -302,9 +299,6 @@ iframe {
 .tagStyle {
   color: var(--color-3);
 }
-.tituloMain {
-  position: relative;
-}
 .musicaInfTime {
   margin: 0;
   font-family: var(--poppins);
@@ -314,6 +308,18 @@ iframe {
   line-height: 30px;
   color: var(--color-12);
   text-transform: uppercase;
+}
+.art1 .maisSobre {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 2em;
+  letter-spacing: 0;
+  line-height: 30px;
+  color: var(--color-9);
+  margin-bottom: 40px;
+}
+.tituloMain {
+  position: relative;
 }
 .citacao {
   display: flex;
@@ -664,4 +670,167 @@ iframe {
   line-height: 24px;
   color: var(--color-16);
   margin: 0;
+}
+
+@media screen and (max-width: 360px) {
+  /* GERAL */
+  p {
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+  /* CONATINER PAGE */
+  .containerPage {
+    width: 360px;
+  }
+  /* HEADER */
+  .header {
+    max-width: 1200px;
+    height: 110px;
+    margin: 20px 0px 10px 0px;
+  }
+  .headerContainer1 {
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
+  }
+  .menuLateral {
+    display: flex;
+    margin-right: 20px;
+  }
+  .headerLogo .logoImg {
+    width: 130px;
+    height: 45px;
+    margin-right: 44.5px;
+  }
+  .previsaoContainer {
+    display: flex;
+    width: 109px;
+    height: 32px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .previsaoContainer .previsao .temp {
+    font-size: 1.2em;
+  }
+  .previsaoContainer .previsao .cityTemp {
+    font-weight: 500;
+    font-size: 1em;
+  }
+  .linksAssineClassificados,
+  .inputBusca,
+  .faceInst {
+    display: none;
+  }
+  .headerContainer2 {
+    overflow-y: scroll;
+    padding: 0px 10px 0px 10px;
+  }
+  .headerContainer2 .navHeader > ul > li > a {
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 16px;
+  }
+  .headerContainer2 .navHeader > ul > li:hover {
+    border-bottom: 3px solid var(--color-3);
+  }
+  /* MAIN */
+  .imgFelipePezzoneDesktop {
+    display: none;
+  }
+  .imgFelipePezzoneMobile {
+    display: inline;
+  }
+  .main {
+    position: relative;
+    width: 100vw;
+  }
+  .art1 {
+    width: 360px;
+    margin-top: -70px;
+    padding: 20px 20px 0px 20px;
+  }
+  .paginaTag {
+    width: 360px;
+    height: 141px;
+    position: relative;
+    background-color: var(--color-10);
+    padding: 20px 20px 0px 20px;
+  }
+  .musicaInfTime {
+    margin: 0;
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 0;
+    line-height: 30px;
+    color: var(--color-12);
+    text-transform: uppercase;
+  }
+  .tituloMain {
+    font-weight: 700;
+    font-size: 2.2em;
+    letter-spacing: 0;
+    line-height: 26px;
+    margin-bottom: 6px;
+  }
+  .tituloMain > br {
+    display: none;
+  }
+  .art1 .maisSobre {
+    font-weight: 400;
+    font-size: 1.4em;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+  .citacao {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+  }
+  .citacaoTextContainer {
+    width: 286px;
+    height: 184px;
+    margin: 0 0 30px 0;
+  }
+  .citacaoText {
+    font-size: 2em;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin: 16px 0px 0px 0px;
+  }
+  .citacaoByPezzoni{
+    margin: 0;
+  }
+  .imgContainer {
+    width: 320px;
+    height: 246px;
+    text-align: center;
+  }
+  .citacaoImgFelipePezzoni {
+    width: 320px;
+    height: 226px;
+  }
+
+  /* SECT2 */
+  .sec2 {
+    margin-bottom: 60px;
+    margin: 20px;
+  }
+  .sec2 > h2 {
+    margin-bottom: 20px;
+  }
+  .leiaTambemArtigos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .artigo {
+    width: 320px;
+    height: 200px;
+  }
+  .artigo > h3 > br {
+    display: none;
+  }
 }
