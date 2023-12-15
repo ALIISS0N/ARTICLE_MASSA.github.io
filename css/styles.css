@@ -549,6 +549,7 @@ iframe {
 .btnPrint {
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 .textPrint {
   margin: 0px;
@@ -558,6 +559,10 @@ iframe {
   letter-spacing: 0;
   line-height: 16px;
   color: var(--color-3);
+}
+/* COMPARTILHAR */
+.compartilhar {
+  display: none;
 }
 /* SEC 2 */
 .sec2 {
@@ -671,8 +676,339 @@ iframe {
   color: var(--color-16);
   margin: 0;
 }
+.copyText > br {
+  display: none;
+}
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 428px) {
+  /* GERAL */
+  p {
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+  p > br {
+    display: none;
+  }
+  /* CONATINER PAGE */
+  .containerPage {
+    width: 428px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* ASIDE */
+  .asideInf {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+  }
+  .ouvir {
+    position: static;
+    display: flex;
+  }
+  .mediaSocial {
+    display: none;
+  }
+  .print {
+    position: static;
+  }
+  .compartilhar {
+    display: inline;
+  }
+  .compartilharPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 51px;
+  }
+  .btnCompartilhar {
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .textCompartilhar {
+    margin: 0px;
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 0;
+    line-height: 16px;
+    color: var(--color-3);
+  }
+  /* HEADER */
+  .header {
+    width: 100%;
+    height: 110px;
+    margin: 20px 0px 10px 0px;
+  }
+  .headerContainer1 {
+    justify-content: space-around;
+    padding: 0px auto 0px auto;
+  }
+  .menuLateral {
+    display: flex;
+    margin-right: 20px;
+  }
+  .headerLogo .logoImg {
+    width: 130px;
+    height: 45px;
+    margin-right: 44.5px;
+  }
+  .previsaoContainer {
+    display: flex;
+    width: 109px;
+    height: 32px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .previsaoContainer .previsao .temp {
+    font-size: 1.2em;
+  }
+  .previsaoContainer .previsao .cityTemp {
+    font-weight: 500;
+    font-size: 1em;
+  }
+  .linksAssineClassificados,
+  .inputBusca,
+  .faceInst {
+    display: none;
+  }
+  .headerContainer2 {
+    overflow-y: scroll;
+    padding: 0px 10px 0px 10px;
+  }
+  .headerContainer2 .navHeader > ul > li > a {
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 16px;
+  }
+  .headerContainer2 .navHeader > ul > li:hover {
+    border-bottom: 3px solid var(--color-3);
+  }
+  /* MAIN */
+  .imgFelipePezzoneDesktop {
+    display: none;
+  }
+  .imgFelipePezzoneMobile {
+    display: inline;
+  }
+  .imgFelipePezzoneMobile > img {
+    width: 100%;
+    height: 309px;
+  }
+  .main {
+    position: relative;
+    width: 100vw;
+  }
+  .art1 {
+    width: 360px;
+    margin-top: -70px;
+    padding: 20px 20px 0px 20px;
+  }
+  .paginaTag {
+    width: 428px;
+    height: 141px;
+    position: relative;
+    background-color: var(--color-10);
+    padding: 20px auto 0px auto;
+    margin-bottom: 15px;
+  }
+  .musicaInfTime {
+    margin: 0;
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 0;
+    line-height: 30px;
+    color: var(--color-12);
+    text-transform: uppercase;
+  }
+  .tituloMain {
+    font-weight: 700;
+    font-size: 2.2em;
+    letter-spacing: 0;
+    line-height: 26px;
+    margin-bottom: 6px;
+  }
+  .tituloMain > br {
+    display: none;
+  }
+  .art1 .maisSobre {
+    font-weight: 400;
+    font-size: 1.4em;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+  .citacao {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+  }
+  .citacaoTextContainer {
+    width: 286px;
+    height: 184px;
+    margin: 0 0 30px 0;
+  }
+  .citacaoText {
+    font-size: 2em;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin: 16px 0px 0px 0px;
+  }
+  .citacaoByPezzoni {
+    margin: 0;
+  }
+  .imgContainer {
+    width: 320px;
+    height: 246px;
+    text-align: center;
+  }
+  .citacaoImgFelipePezzoni {
+    width: 320px;
+    height: 226px;
+  }
+  .videoIntroDvdEva > iframe {
+    display: flex;
+    width: 320px;
+    height: 180px;
+  }
+  .repertorioSpotify > iframe {
+    display: flex;
+    width: 320px;
+  }
+  .repertorioSpotify .citacaoText {
+    font-size: 1.6em;
+    letter-spacing: 0px;
+    line-height: 24px;
+  }
+  .citacao2 {
+    font-size: 2em;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .citacao2 > br {
+    display: none;
+  }
+  .difilcudades {
+    font-size: 2em;
+    letter-spacing: 0;
+    line-height: 27px;
+    margin-bottom: 15px;
+  }
+  .galeriaNancimentoFilho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 370px;
+  }
+  .galeriaContainer {
+    width: 320px;
+    height: 320px;
+  }
+  .galeriaFotosFilho {
+    width: 320px;
+    height: 166px;
+  }
+  .producao {
+    margin: 8px 0px 20px 0px;
+    font-size: 1em;
+    line-height: 15px;
+  }
+  .proxFoto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    height: 8px;
+  }
+  .linkProx {
+    width: 8px;
+    height: 8px;
+  }
+  .proxPlus {
+    display: none;
+  }
+
+  /* SECT2 */
+  .sec2 {
+    margin-bottom: 60px;
+    margin: 20px;
+  }
+  .sec2 > h2 {
+    margin-bottom: 20px;
+  }
+  .leiaTambemArtigos {
+    display: grid;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .artigo {
+    width: 320px;
+    height: 200px;
+  }
+  .artigo > h3 > br {
+    display: none;
+  }
+  /* FOOTER */
+  .footer {
+    position: relative;
+    width: 100%;
+    height: 1016px;
+    padding: 25px 20px 0px 20px;
+    background-color: var(--color-15);
+  }
+  .logoFooterImg {
+    width: 130.5px;
+    height: 45px;
+  }
+  .footerMenus {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 30px;
+  }
+  .menuEmpregos {
+    margin-bottom: 50px;
+  }
+  .menuEsporte {
+    margin-top: -130px;
+  }
+  .menuCidades {
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: -210px;
+  }
+  .copy {
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 73px;
+    border-top: 1px solid var(--color-17);
+  }
+  .copy .copyText {
+    line-height: 14px;
+    text-align: center;
+    margin: 0;
+  }
+  .copyText > br {
+    display: flex;
+  }
+  .svgLogoMW {
+    position: absolute;
+    right: 0;
+    bottom: 113px;
+  }
+}
+@media screen and (max-width: 375px) {
   /* GERAL */
   p {
     line-height: 22px;
@@ -686,6 +1022,44 @@ iframe {
     width: 360px;
   }
   /* ASIDE */
+  .asideInf {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+  }
+  .ouvir {
+    position: static;
+  }
+  .mediaSocial {
+    display: none;
+  }
+  .print {
+    position: static;
+  }
+  .compartilhar {
+    display: inline;
+  }
+  .compartilharPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 51px;
+  }
+  .btnCompartilhar {
+    border: none;
+    cursor: pointer;
+  }
+  .textCompartilhar {
+    margin: 0px;
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 0;
+    line-height: 16px;
+    color: var(--color-3);
+  }
   /* HEADER */
   .header {
     max-width: 1200px;
@@ -900,5 +1274,369 @@ iframe {
   }
   .artigo > h3 > br {
     display: none;
+  }
+  /* FOOTER */
+  .footer {
+    position: relative;
+    width: 100%;
+    height: 1016px;
+    padding: 25px 20px 0px 20px;
+    background-color: var(--color-15);
+  }
+  .logoFooterImg {
+    width: 130.5px;
+    height: 45px;
+  }
+  .footerMenus {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 30px;
+  }
+  .menuEmpregos {
+    margin-bottom: 50px;
+  }
+  .menuEsporte {
+    margin-top: -130px;
+  }
+  .menuCidades {
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: -210px;
+  }
+  .copy {
+    align-items: center;
+    width: 320px;
+    height: 73px;
+    border-top: 1px solid var(--color-17);
+  }
+  .copy .copyText {
+    line-height: 14px;
+    text-align: center;
+    margin: 0;
+  }
+  .copyText > br {
+    display: flex;
+  }
+  .svgLogoMW {
+    position: absolute;
+    right: 0;
+    bottom: 113px;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* GERAL */
+  p {
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+  p > br {
+    display: none;
+  }
+  /* CONATINER PAGE */
+  .containerPage {
+    width: 360px;
+  }
+  /* ASIDE */
+  .asideInf {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+  }
+  .ouvir {
+    position: static;
+  }
+  .mediaSocial {
+    display: none;
+  }
+  .print {
+    position: static;
+  }
+  .compartilhar {
+    display: inline;
+  }
+  .compartilharPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 51px;
+  }
+  .btnCompartilhar {
+    border: none;
+    cursor: pointer;
+  }
+  .textCompartilhar {
+    margin: 0px;
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 0;
+    line-height: 16px;
+    color: var(--color-3);
+  }
+  /* HEADER */
+  .header {
+    max-width: 1200px;
+    height: 110px;
+    margin: 20px 0px 10px 0px;
+  }
+  .headerContainer1 {
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
+  }
+  .menuLateral {
+    display: flex;
+    margin-right: 20px;
+  }
+  .headerLogo .logoImg {
+    width: 130px;
+    height: 45px;
+    margin-right: 44.5px;
+  }
+  .previsaoContainer {
+    display: flex;
+    width: 109px;
+    height: 32px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .previsaoContainer .previsao .temp {
+    font-size: 1.2em;
+  }
+  .previsaoContainer .previsao .cityTemp {
+    font-weight: 500;
+    font-size: 1em;
+  }
+  .linksAssineClassificados,
+  .inputBusca,
+  .faceInst {
+    display: none;
+  }
+  .headerContainer2 {
+    overflow-y: scroll;
+    padding: 0px 10px 0px 10px;
+  }
+  .headerContainer2 .navHeader > ul > li > a {
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 16px;
+  }
+  .headerContainer2 .navHeader > ul > li:hover {
+    border-bottom: 3px solid var(--color-3);
+  }
+  /* MAIN */
+  .imgFelipePezzoneDesktop {
+    display: none;
+  }
+  .imgFelipePezzoneMobile {
+    display: inline;
+  }
+  .main {
+    position: relative;
+    width: 100vw;
+  }
+  .art1 {
+    width: 360px;
+    margin-top: -70px;
+    padding: 20px 20px 0px 20px;
+  }
+  .paginaTag {
+    width: 360px;
+    height: 141px;
+    position: relative;
+    background-color: var(--color-10);
+    padding: 20px 20px 0px 20px;
+  }
+  .musicaInfTime {
+    margin: 0;
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 0;
+    line-height: 30px;
+    color: var(--color-12);
+    text-transform: uppercase;
+  }
+  .tituloMain {
+    font-weight: 700;
+    font-size: 2.2em;
+    letter-spacing: 0;
+    line-height: 26px;
+    margin-bottom: 6px;
+  }
+  .tituloMain > br {
+    display: none;
+  }
+  .art1 .maisSobre {
+    font-weight: 400;
+    font-size: 1.4em;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+  .citacao {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+  }
+  .citacaoTextContainer {
+    width: 286px;
+    height: 184px;
+    margin: 0 0 30px 0;
+  }
+  .citacaoText {
+    font-size: 2em;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin: 16px 0px 0px 0px;
+  }
+  .citacaoByPezzoni {
+    margin: 0;
+  }
+  .imgContainer {
+    width: 320px;
+    height: 246px;
+    text-align: center;
+  }
+  .citacaoImgFelipePezzoni {
+    width: 320px;
+    height: 226px;
+  }
+  .videoIntroDvdEva > iframe {
+    display: flex;
+    width: 320px;
+    height: 180px;
+  }
+  .repertorioSpotify > iframe {
+    display: flex;
+    width: 320px;
+  }
+  .repertorioSpotify .citacaoText {
+    font-size: 1.6em;
+    letter-spacing: 0px;
+    line-height: 24px;
+  }
+  .citacao2 {
+    font-size: 2em;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .citacao2 > br {
+    display: none;
+  }
+  .difilcudades {
+    font-size: 2em;
+    letter-spacing: 0;
+    line-height: 27px;
+    margin-bottom: 15px;
+  }
+  .galeriaNancimentoFilho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 370px;
+  }
+  .galeriaContainer {
+    width: 320px;
+    height: 320px;
+  }
+  .galeriaFotosFilho {
+    width: 320px;
+    height: 166px;
+  }
+  .producao {
+    margin: 8px 0px 20px 0px;
+    font-size: 1em;
+    line-height: 15px;
+  }
+  .proxFoto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    height: 8px;
+  }
+  .linkProx {
+    width: 8px;
+    height: 8px;
+  }
+  .proxPlus {
+    display: none;
+  }
+
+  /* SECT2 */
+  .sec2 {
+    margin-bottom: 60px;
+    margin: 20px;
+  }
+  .sec2 > h2 {
+    margin-bottom: 20px;
+  }
+  .leiaTambemArtigos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .artigo {
+    width: 320px;
+    height: 200px;
+  }
+  .artigo > h3 > br {
+    display: none;
+  }
+  /* FOOTER */
+  .footer {
+    position: relative;
+    width: 100%;
+    height: 1016px;
+    padding: 25px 20px 0px 20px;
+    background-color: var(--color-15);
+  }
+  .logoFooterImg {
+    width: 130.5px;
+    height: 45px;
+  }
+  .footerMenus {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 30px;
+  }
+  .menuEmpregos {
+    margin-bottom: 50px;
+  }
+  .menuEsporte {
+    margin-top: -130px;
+  }
+  .menuCidades {
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: -210px;
+  }
+  .copy {
+    align-items: center;
+    width: 320px;
+    height: 73px;
+    border-top: 1px solid var(--color-17);
+  }
+  .copy .copyText {
+    line-height: 14px;
+    text-align: center;
+    margin: 0;
+  }
+  .copyText > br {
+    display: flex;
+  }
+  .svgLogoMW {
+    position: absolute;
+    right: 0;
+    bottom: 113px;
   }
 }
