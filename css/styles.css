@@ -1126,7 +1126,7 @@ iframe {
   }
   .imgFelipePezzoneMobile > img {
     width: 100%;
-    height: 309px;
+    height: 282px;
   }
   .main {
     position: relative;
@@ -1445,6 +1445,10 @@ iframe {
   }
   .imgFelipePezzoneMobile {
     display: inline;
+  }
+  .imgFelipePezzoneMobile > img {
+    width: 100%;
+    height: 271px;
   }
   .main {
     position: relative;
